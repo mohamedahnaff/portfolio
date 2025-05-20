@@ -1,0 +1,64 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahnaf's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-indicator" id="indicator"></div>
+    <div class="title-bar">
+      <h1>Portfolio.</h1>
+      <ul>
+        <a href="index.html" style="transition: 1s">
+          <li onmouseover="pageIndicator(event)" id="home-id">Home</li>
+        </a>
+        <a href="about.html">
+          <li onmouseover="pageIndicator(event)" id="about-id">About</li>
+        </a>
+        <a href="project.html">
+          <li onmouseover="pageIndicator(event)" id="project-id">Projects</li>
+        </a>
+        <a href="resume.html">
+          <li onmouseover="pageIndicator(event)" id="resume-id">Resume</li>
+        </a>
+        <a href="contact.html">
+          <li onmouseover="pageIndicator(event)" id="contact-id">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="intro-container">
+        <div class="intro">
+          <h3>Hello, It's me</h3>
+          <h2>Mohamed Ahnaf</h2>
+          <h4>Software Engineer | Full Stack Developer</h4>
+          <p>
+            I am a passionate software engineer with a dedication to crafting
+            high-quality, innovative solutions. Throughout my academic journey
+            and professional career, I've honed my skills in software
+            development, problem-solving, and project management.
+          </p>
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="photo-container" id="exa">
+          <img src="assets/Profile .jpg" alt="Profile photo" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

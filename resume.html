@@ -1,0 +1,185 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahnaf's Portfolio - Resume</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="overlay"></div>
+      <div class="popup-box" id="popup">
+        <h2>Guess the computer number?</h2><br></br><br><br>
+        <input type="number" placeholder="Enter the number" id="input-num"/><br></br>
+        <button onclick="game(event)">Check</button><br><br><br><br><br><br>
+        <p id="status">Choose a number between 1 and 10 and check by click the check button.</p>
+        <button style="background-color: red;
+        color: aliceblue;
+        opacity: 0.8;
+        border: none;
+        width: 80px;
+        height: 30px;
+        padding: 2px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;" class="close-btn" id="close-btn-id">Close</button>
+      </div>
+    </div>
+    <div class="page-indicator" id="indicator" style="right: 138px"></div>
+    <div class="title-bar">
+      <h1>Portfolio.</h1>
+      <ul>
+        <a href="index.html" style="transition: 1s">
+          <li onmouseover="pageIndicator(event)" id="home-id">Home</li>
+        </a>
+        <a href="about.html">
+          <li onmouseover="pageIndicator(event)" id="about-id">About</li>
+        </a>
+        <a href="project.html">
+          <li onmouseover="pageIndicator(event)" id="project-id">Projects</li>
+        </a>
+        <a href="resume.html">
+          <li onmouseover="pageIndicator(event)" id="resume-id">Resume</li>
+        </a>
+        <a href="contact.html">
+          <li onmouseover="pageIndicator(event)" id="contact-id">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="intro-container">
+        <div class="intro">
+          <img src="assets/Profile .jpg" alt="Ahnaf's Photo" /><br /><br />
+          <a href="resume/My Resume.pdf" download
+            ><button type="button">Download Resume</button></a
+          >
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="game">
+          <h2>Do you want to play with computer?</h2>
+          <p>Click the button below and enjoy...</p>
+          <button
+            style="background-color: rgb(0, 248, 252); color: #111d13" id="popup-btn"
+          >
+            Let's Play
+          </button>
+        </div>
+      </div>
+    </div>
+    <style>
+      .intro-container {
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .intro-container img {
+        width: 200px;
+        border-radius: 100%;
+      }
+
+      button,
+      .popup-box button {
+        background-color: transparent;
+        border: 2px solid rgb(0, 248, 252);
+        height: 60px;
+        width: 200px;
+        border-radius: 15px;
+        color: aliceblue;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      button:hover {
+        box-shadow: rgb(0, 248, 252) 0px 0px 20px;
+        font-weight: 600;
+      }
+      .game {
+        font-family: "Josefin Sans", sans-serif;
+        padding: 20px;
+        color: aliceblue;
+      }
+      .game h2 {
+        color: rgb(0, 248, 252);
+        margin-bottom: 10px;
+      }
+
+      .game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.8;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .popup-box {
+        height: 70vh;
+        width: 60%;
+        background-color: #111d13;
+        border-radius: 20px;
+        box-shadow: rgb(0, 248, 252) 0 0 20px;
+        color: aliceblue;
+        font-family: "Josefin Sans", sans-serif;
+        position: absolute;
+        top: 20vh;
+        z-index: 2;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .popup-box input {
+        height: 30px;
+        width: 200px;
+        border: none;
+        font-size: medium;
+        font-family: "Poppins", sans-serif;
+        padding: 5px;
+        background-color: transparent;
+        border-bottom: 3px solid rgb(0, 248, 252);
+        color: aliceblue;
+      }
+
+      .popup-box input::placeholder{
+        color: aliceblue;
+      }
+      .popup-box input:focus{
+        outline: none;
+      }
+
+      /* .close-btn{
+        background-color: red;
+        color: #111d13;
+        opacity: 0.8;
+      } */
+    </style>
+    <script src="script.js">
+        
+    </script>
+  </body>
+</html>

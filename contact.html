@@ -1,0 +1,110 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahnaf's Portfolio - About</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-indicator" id="indicator" style="right: 50px"></div>
+    <div class="title-bar">
+      <h1>Portfolio.</h1>
+      <ul>
+        <a href="index.html" style="transition: 1s">
+          <li onmouseover="pageIndicator(event)" id="home-id">Home</li>
+        </a>
+        <a href="about.html">
+          <li onmouseover="pageIndicator(event)" id="about-id">About</li>
+        </a>
+        <a href="project.html">
+          <li onmouseover="pageIndicator(event)" id="project-id">Projects</li>
+        </a>
+        <a href="resume.html">
+          <li onmouseover="pageIndicator(event)" id="resume-id">Resume</li>
+        </a>
+        <a href="contact.html">
+          <li onmouseover="pageIndicator(event)" id="contact-id">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="top-container">
+        <img src="assets/Profile .jpg" alt="" srcset="" />
+      </div>
+      <div class="bottom-container">
+        <a href=""
+          ><div><i class="bx bxl-whatsapp"></i> Whatsapp</div></a
+        >
+        <a href="https://www.facebook.com/itsmeahnaff?mibextid=ZbWKwL"
+          ><div><i class="bx bxl-facebook"></i> Facebook</div></a
+        >
+        <a href="https://www.linkedin.com/in/mohamed-ahnaf-5a6ab0242"
+          ><div><i class="bx bxl-linkedin"></i> Linked in</div></a
+        >
+        <a href="mailto:ahnafnan@gmail.com"
+          ><div><i class="bx bxl-gmail"></i> Mail</div></a
+        >
+      </div>
+    </div>
+    <style>
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .top-container,
+      .bottom-container {
+        width: 100%;
+        padding: 20px;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .top-container img {
+        width: 250px;
+        border-radius: 100%;
+      }
+      .bottom-container div {
+        color: rgb(0, 248, 252);
+        scale: 1;
+        font-family: "Josefin Sans", sans-serif;
+        cursor: pointer;
+        font-size: 24px;
+        border: 3px solid rgb(0, 248, 252);
+        border-radius: 30px;
+        padding: 10px;
+      }
+      .bottom-container div:hover {
+        scale: 1.2;
+        box-shadow: rgb(0, 248, 252) 0 0 20px;
+        transition: 0.5s;
+      }
+
+      .bottom-container a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>

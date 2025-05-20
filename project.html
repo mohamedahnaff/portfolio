@@ -1,0 +1,174 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahnaf's Portfolio - Projects</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-indicator" id="indicator" style="right: 222px"></div>
+    <div class="title-bar">
+      <h1>Portfolio.</h1>
+      <ul>
+        <a href="index.html" style="transition: 1s">
+          <li onmouseover="pageIndicator(event)" id="home-id">Home</li>
+        </a>
+        <a href="about.html">
+          <li onmouseover="pageIndicator(event)" id="about-id">About</li>
+        </a>
+        <a href="project.html">
+          <li onmouseover="pageIndicator(event)" id="project-id">Projects</li>
+        </a>
+        <a href="resume.html">
+          <li onmouseover="pageIndicator(event)" id="resume-id">Resume</li>
+        </a>
+        <a href="contact.html">
+          <li onmouseover="pageIndicator(event)" id="contact-id">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="project-one">
+        <img src="assets/Projects/Portfolio.png" />
+        <div class="project-one-info">
+          <h2>Portfolio</h2>
+          <p>
+            A personal portfolio website built using HTML, CSS, and JavaScript
+            to showcase projects and skills. Designed with responsiveness and
+            clean UI for optimal presentation.
+          </p>
+        </div>
+      </div>
+      <div class="project-two">
+        <img src="assets/Projects/TaxiBooking.jpg" />
+        <div class="project-two-info">
+          <h2>Taxi Booking Web App</h2>
+          <p>
+            A full-featured online taxi booking platform developed with React
+            JS, PHP, and MySQL. Led the team and handled fullstack development
+            including user interface, booking logic, and backend integration.
+          </p>
+        </div>
+      </div>
+      <div class="project-three">
+        <img src="assets/Projects/LMS.png" />
+        <div class="project-three-info">
+          <h2>LMS System</h2>
+          <p>
+            A web-based LMS designed in Figma and developed using React JS, PHP,
+            and MySQL. Served as backend developer and team lead, focusing on
+            authentication, course management, and data handling.
+          </p>
+        </div>
+      </div>
+      <div class="project-four">
+        <img src="assets/Projects/POS.png" />
+        <div class="project-four-info">
+          <h2>POS System</h2>
+          <p>
+            A responsive POS system interface designed in Figma and implemented
+            using React JS and Node JS. Contributed as a frontend developer,
+            focusing on user-friendly layout and seamless interaction.
+          </p>
+        </div>
+      </div>
+      <div class="project-five">
+        <img src="assets/Projects/Mobile-Application.jpg" />
+        <div class="project-five-info">
+          <h2>Mobile App</h2>
+          <p>
+            A cross-platform mobile application developed using React Native,
+            Java Spring Boot, and MySQL. Handled fullstack development,
+            integrating real-time features and robust backend services.
+          </p>
+        </div>
+      </div>
+      <div class="project-six">
+        <img src="assets/Projects/E-book Webapp.jpg" />
+        <div class="project-six-info">
+          <h2>EBook Web Application</h2>
+          <p>
+            A digital library platform enabling users to browse and read
+            e-books, built with React JS, PHP, and MySQL. Led the team and
+            managed fullstack development including UI/UX, user roles, and
+            database design.
+          </p>
+        </div>
+      </div>
+      <div class="project-seven">
+        <img src="assets/Projects/Car-show-room-app.png" />
+        <div class="project-seven-info">
+          <h2>Car Showroom Project</h2>
+          <p>
+            A desktop-based car showroom management system developed in C# using
+            .NET framework. Worked as a fullstack developer, implementing
+            inventory, billing, and customer management features.
+          </p>
+        </div>
+      </div>
+    </div>
+    <style>
+      .project-one,
+      .project-two,
+      .project-three,
+      .project-four,
+      .project-five,
+      .project-six,
+      .project-seven {
+        width: 300px;
+        height: 300px;
+        background-color: aliceblue;
+        margin: 20px;
+        border-radius: 5px;
+      }
+
+      .project-one:hover,
+      .project-two:hover,
+      .project-three:hover,
+      .project-four:hover,
+      .project-five:hover,
+      .project-six:hover,
+      .project-seven:hover {
+        box-shadow: rgb(0, 248, 252) 0px 0px 10px;
+        cursor: pointer;
+      }
+
+      .project-one-info,
+      .project-two-info,
+      .project-three-info,
+      .project-four-info,
+      .project-five-info,
+      .project-six-info,
+      .project-seven-info {
+        padding: 10px;
+        text-align: justify;
+      }
+
+      .content img {
+        width: 300px;
+        height: 150px;
+      }
+
+      .content h2 {
+        margin-bottom: 10px;
+      }
+
+      .content {
+        font-family: "Josefin Sans", sans-serif;
+        color: #111d13;
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
